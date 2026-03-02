@@ -4,17 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alfa Omega Floors | Epoxy & Specialty Flooring</title>
-  <meta name="description" content="Alfa Omega Floors delivers premium epoxy garage floors, metallic systems, flake, and industrial coatings. Based in Bellflower, CA — available nationwide." />
-  <meta name="theme-color" content="#0b0f19" />
+  <meta name="description" content="Premium epoxy, metallic, flake, and industrial coatings. Based in Bellflower, CA — available nationwide." />
+  <meta name="theme-color" content="#7b1e2b" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Alfa Omega Floors | Epoxy & Specialty Flooring" />
-  <meta property="og:description" content="Premium epoxy, metallic, flake, and industrial coatings. Bellflower, CA — available nationwide." />
-  <meta property="og:type" content="website" />
-
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 
   <!-- LocalBusiness Schema -->
@@ -23,9 +20,9 @@
     "@context": "https://schema.org",
     "@type": "FlooringContractor",
     "name": "Alfa Omega Floors",
-    "areaServed": ["United States", "Worldwide"],
     "telephone": "+1-442-278-8596",
     "email": "Alfa.omegafloors@gmail.com",
+    "areaServed": ["United States", "Worldwide"],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Bellflower",
@@ -41,7 +38,10 @@
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#top" aria-label="Alfa Omega Floors Home">
-        <span class="brand__mark">AO</span>
+        <!-- Upload your logo as logo.png -->
+        <img src="logo.png" class="logo" alt="Alfa Omega Floors Logo" onerror="this.style.display='none'; document.getElementById('brandFallback').style.display='grid';">
+        <span id="brandFallback" class="brand__mark" style="display:none;">AO</span>
+
         <span class="brand__text">
           <strong>Alfa Omega</strong><span>Floors</span>
         </span>
@@ -64,11 +64,13 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="badge">Bellflower, CA • Available Nationwide</p>
-          <h1>Luxury Epoxy Floors That Stop People in Their Tracks.</h1>
+          <p class="badge">Bellflower, CA • Available Nationwide • Expanding Worldwide</p>
+
+          <h1>Luxury Epoxy Floors Built to Perform — Designed to Impress.</h1>
+
           <p class="subhead">
-            Metallic, flake, solid color, industrial coatings, and full prep done the right way.
-            Built for durability. Designed for wow.
+            Metallic marble, flake broadcast, solid color, and industrial-grade coatings.
+            Proper prep. Clean details. Durable finishes.
           </p>
 
           <div class="cta">
@@ -77,25 +79,16 @@
           </div>
 
           <div class="trust">
-            <div class="trust__item">
-              <span class="trust__num">✔</span>
-              <span>Professional surface prep</span>
-            </div>
-            <div class="trust__item">
-              <span class="trust__num">✔</span>
-              <span>Residential + Commercial</span>
-            </div>
-            <div class="trust__item">
-              <span class="trust__num">✔</span>
-              <span>Local today • Worldwide soon</span>
-            </div>
+            <div class="trust__item"><span class="trust__num">✔</span><span>Professional surface prep</span></div>
+            <div class="trust__item"><span class="trust__num">✔</span><span>Residential + Commercial</span></div>
+            <div class="trust__item"><span class="trust__num">✔</span><span>Nationwide-ready service</span></div>
           </div>
         </div>
 
         <div class="hero__card">
           <div class="card">
             <h3>Fastest way to reach me</h3>
-            <p class="muted">Call/text for same-day response whenever possible.</p>
+            <p class="muted">Call/text for the quickest response.</p>
 
             <div class="contact-quick">
               <a class="btn btn--full" href="tel:+14422788596">📞 Call Now</a>
@@ -161,43 +154,65 @@
             <div class="step__num">1</div>
             <div>
               <h3>Quick Quote</h3>
-              <p>Send a few photos + square footage and your desired look.</p>
+              <p>Send photos + square footage + your finish (flake/metallic/solid).</p>
             </div>
           </div>
           <div class="step">
             <div class="step__num">2</div>
             <div>
-              <h3>Prep & Moisture Check</h3>
-              <p>Proper grind prep and the right primer/system for your slab conditions.</p>
+              <h3>Prep & System Selection</h3>
+              <p>Proper prep and the right primer/system for your slab conditions.</p>
             </div>
           </div>
           <div class="step">
             <div class="step__num">3</div>
             <div>
               <h3>Install & Protect</h3>
-              <p>Coating application, detail work, and a durable topcoat for long-term performance.</p>
+              <p>Detail work + a durable topcoat for long-term performance.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery (placeholders) -->
+    <!-- Gallery -->
     <section class="section" id="gallery">
       <div class="container">
         <div class="section__head">
           <h2>Gallery</h2>
-          <p class="muted">Drop your project photos in these spots later (or I can help you wire an Instagram feed).</p>
+          <p class="muted">Upload your photos using the file names below — they’ll auto-populate here.</p>
         </div>
 
         <div class="grid grid--3 gallery">
-          <div class="ph">Your Photo</div>
-          <div class="ph">Your Photo</div>
-          <div class="ph">Your Photo</div>
-          <div class="ph">Your Photo</div>
-          <div class="ph">Your Photo</div>
-          <div class="ph">Your Photo</div>
+          <figure class="gallery__item">
+            <img src="gallery1.jpg" alt="Epoxy floor project 1" onerror="this.parentElement.classList.add('ph'); this.remove();">
+            <figcaption>Metallic • Luxury Finish</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="gallery2.jpg" alt="Epoxy floor project 2" onerror="this.parentElement.classList.add('ph'); this.remove();">
+            <figcaption>Flake • Clean & Tough</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="gallery3.jpg" alt="Epoxy floor project 3" onerror="this.parentElement.classList.add('ph'); this.remove();">
+            <figcaption>Solid • Modern Look</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="gallery4.jpg" alt="Epoxy floor project 4" onerror="this.parentElement.classList.add('ph'); this.remove();">
+            <figcaption>Commercial • Heavy Duty</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="gallery5.jpg" alt="Epoxy floor project 5" onerror="this.parentElement.classList.add('ph'); this.remove();">
+            <figcaption>Prep • Done Right</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="gallery6.jpg" alt="Epoxy floor project 6" onerror="this.parentElement.classList.add('ph'); this.remove();">
+            <figcaption>Custom • Signature Style</figcaption>
+          </figure>
         </div>
+
+        <p class="tiny muted">
+          Photo names to upload: <strong>gallery1.jpg</strong> … <strong>gallery6.jpg</strong> (exact spelling).
+        </p>
       </div>
     </section>
 
@@ -207,8 +222,8 @@
         <div class="contact__copy">
           <h2>Request a quote</h2>
           <p class="muted">
-            Tell me what you want done, your square footage, and attach photos if you can.
             Based in <strong>Bellflower, CA</strong> — available <strong>nationwide</strong>, and expanding worldwide.
+            For faster pricing, include: sqft, city, current condition, and your preferred finish.
           </p>
 
           <div class="contact__cards">
@@ -227,13 +242,12 @@
           </div>
 
           <p class="tiny muted">
-            Tip: If you want faster pricing, include: sqft, city, current floor condition, and your preferred finish (flake/metallic/solid).
+            Tip: add a “Send Photos” link later (Drive/Dropbox) for even faster quoting.
           </p>
         </div>
 
         <div class="contact__form">
           <form id="quoteForm" action="https://formsubmit.co/Alfa.omegafloors@gmail.com" method="POST">
-            <!-- FormSubmit options -->
             <input type="hidden" name="_subject" value="New Quote Request — Alfa Omega Floors" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
@@ -260,7 +274,7 @@
 
             <div class="field">
               <label for="details">Project details</label>
-              <textarea id="details" name="details" rows="5" placeholder="Square footage, current floor condition, and finish you want (flake/metallic/solid)."></textarea>
+              <textarea id="details" name="details" rows="5" placeholder="Square footage, floor condition, and finish you want (flake/metallic/solid)."></textarea>
             </div>
 
             <div class="field">
@@ -271,10 +285,6 @@
             </div>
 
             <button class="btn btn--full" type="submit">Send Quote Request</button>
-
-            <p class="tiny muted">
-              After launch: add a “Upload Photos” link (Google Drive/Dropbox) so leads can send pics easily.
-            </p>
           </form>
 
           <div class="formStatus" id="formStatus" aria-live="polite"></div>
