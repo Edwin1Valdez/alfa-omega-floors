@@ -171,3 +171,35 @@ h1{
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
+/* Mobile gallery fix */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gallery__item {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__item img {
+    height: 180px;
+  }
+}
