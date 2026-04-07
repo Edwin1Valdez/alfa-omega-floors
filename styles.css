@@ -224,20 +224,21 @@ img {
   font-weight: 500;
 }
   
-body {
+  body {
   position: relative;
+  background: #f7f2ef;
 }
 
 body::before {
   content: "";
   position: fixed;
-  top: 180px;
+  top: 220px;
   left: 50%;
   transform: translateX(-50%);
-  width: 340px;
-  height: 340px;
+  width: 420px;
+  height: 420px;
   background: url("ao-logo.png.JPG") center center / contain no-repeat;
-  opacity: 0.035;
+  opacity: 0.06;
   pointer-events: none;
   z-index: 0;
 }
