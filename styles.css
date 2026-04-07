@@ -224,22 +224,28 @@ img {
   font-weight: 500;
 }
   
-.hero {
+body {
   position: relative;
-  overflow: hidden;
 }
 
-.hero::before {
+body::before {
   content: "";
-  position: absolute;
-  inset: 0;
-  background: url("ao-logo.png.JPG") center center / 280px no-repeat;
-  opacity: 0.04;
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 340px;
+  height: 340px;
+  background: url("ao-logo.png.JPG") center center / contain no-repeat;
+  opacity: 0.035;
   pointer-events: none;
   z-index: 0;
 }
 
-.hero > * {
+main,
+header,
+section,
+footer {
   position: relative;
   z-index: 1;
 }
