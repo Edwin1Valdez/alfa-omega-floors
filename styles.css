@@ -203,3 +203,10 @@ img {
     height: 180px;
   }
 }
+.gallery__item figcaption {
+  padding-left: 6px;
+  padding-top: 8px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111;
+}
