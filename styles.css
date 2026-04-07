@@ -250,3 +250,53 @@ footer {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  header {
+    padding: 12px 14px !important;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  header .brand,
+  header .logo,
+  header .nav__brand {
+    flex: 0 0 auto;
+  }
+
+  header .brand img,
+  header .logo img,
+  header .nav__brand img {
+    width: 46px;
+    height: 46px;
+  }
+
+  header a {
+    white-space: nowrap;
+  }
+
+  header nav > a:not(.btn):not(.button),
+  header .nav__links a {
+    font-size: 0.95rem;
+    padding: 0 2px;
+  }
+
+  header .btn,
+  header .button,
+  header .nav__cta {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    flex: 0 0 auto;
+  }
+}
