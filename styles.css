@@ -242,6 +242,13 @@ body::before {
   pointer-events: none;
   z-index: 0;
 }
+@media (orientation: landscape) and (max-height: 500px) {
+  body::before {
+    top: 90px;
+    width: 260px;
+    height: 260px;
+    opacity: 0.055;
+  }
 
 main,
 header,
