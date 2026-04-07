@@ -223,3 +223,25 @@ img {
   color: #7b1833 !important;
   font-weight: 500;
 }
+.header,
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before,
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("ao-logo.png") center center / 280px no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.header > *,
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
