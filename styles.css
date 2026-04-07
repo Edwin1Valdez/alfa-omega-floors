@@ -219,3 +219,7 @@ img {
   font-size: 1.05rem;
   color: #111;
 }
+.section__head .muted {
+  color: #8b1e3f !important;
+  font-weight: 500;
+}
