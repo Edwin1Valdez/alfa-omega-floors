@@ -183,8 +183,7 @@ img {
 }
 
 .gallery__item {
-  overflow: hidden;
-  border-radius: 16px;
+  overflow: visible;
 }
 
 .gallery__item img {
@@ -192,6 +191,16 @@ img {
   width: 100%;
   height: 320px;
   object-fit: cover;
+  border-radius: 0;
+}
+
+.gallery__item figcaption {
+  display: block;
+  padding: 10px 10px 0 10px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #111;
+  line-height: 1.25;
 }
 
 @media (max-width: 768px) {
